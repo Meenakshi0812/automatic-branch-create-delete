@@ -21,6 +21,10 @@ pipeline {
         stage('Perform build and tests') {
             steps {
                 // Add your build and test commands here
+                // For example:
+                sh 'npm install'
+                sh 'npm run build'
+                sh 'npm run test'
             }
         }
 
