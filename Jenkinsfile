@@ -1,10 +1,10 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Clone repository') {
+     stages {
+          stage('Checkout') {
             steps {
-                git 'https://github.com/Meenakshi0812/automatic-branch-create-delete.git'
+                git branch: 'main', url: 'https://github.com/Meenakshi0812/automatic-branch-create-delete.git'
             }
         }
 
